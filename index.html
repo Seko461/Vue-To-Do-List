@@ -19,15 +19,20 @@
                 <div class="input d-flex gap-2">
                     <input id="text" class="p-2" v-model="newTodo" placeholder="Fare..." @keyup.enter="addTodo">
                     <button class="btn btn-primary p-2" @click="addTodo">Aggiungi</button>
+                    <button class="btn btn-primary p-2" @click="hideCompleted = !hideCompleted">
+                        {{ hideCompleted ? 'Mostra tutti' : 'Nascondi completati' }}
+                    </button>
                 </div>
             </div>
 
             <ul>
-                <li v-for="todo in todos" :key="todo.id">
-                    {{ todo.text }}
+                <li v-for="todo in filteredTodos" :key="todo.id">
+                    <input class="hide" type="checkbox" v-model="todo.done">
+                    <span :class="{ done: todo.done }">{{ todo.text }}</span>
                     <button class="btn" @click="removeTodo(todo)"><i class="fa-solid fa-circle-xmark"></i></button>
                 </li>
             </ul>
+
         </div>
     </div>
 
