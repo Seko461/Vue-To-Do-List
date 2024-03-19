@@ -5,7 +5,10 @@ createApp({
     data() {
         return {
             newTodo: '',
-            todos: [],
+            todos: [
+                { id: id++, text: 'Fare la spesa', done: false },
+                { id: id++, text: 'Andare in palestra', done: false },
+            ],
             hideCompleted: false,
 
 
