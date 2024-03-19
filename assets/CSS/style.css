@@ -1,3 +1,31 @@
-body {
-    background-color: red;
+#app {
+    /* border: 1px solid black; */
+    width: 45%;
+    padding: 1rem 10%;
+    background: rgb(113, 113, 113) linear-gradient(73deg, rgba(113, 113, 113, 1) 0%, rgba(212, 212, 212, 1) 0%, rgba(182, 58, 58, 1) 100%);
+}
+
+.input-form {
+    /* border: 1px solid black; */
+    min-height: 8rem;
+    padding: 2rem .5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background: rgb(190, 45, 36) linear-gradient(212deg, rgba(190, 45, 36, 1) 0%, rgba(255, 44, 0, 1) 0%, rgba(252, 176, 69, 1) 100%);
+    box-shadow: 0px 10px 13px -7px #000000, 14px 20px 30px 0px rgba(0, 0, 0, 0.19);
+}
+
+
+li {
+    list-style: none;
+    border-bottom: 1px solid black;
+    width: 12rem;
+    transform: translateX(-2rem);
+    padding-left: 1rem;
+
+}
+
+li>button>i:hover {
+    color: gray;
+
 }
