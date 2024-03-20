@@ -1,5 +1,6 @@
 #app {
     /* border: 1px solid black; */
+    min-width: 35rem;
     width: 45%;
     padding: 1rem 2rem;
     background: rgb(113, 113, 113) linear-gradient(73deg, rgba(113, 113, 113, 1) 0%, rgba(212, 212, 212, 1) 0%, rgba(182, 58, 58, 1) 100%);
